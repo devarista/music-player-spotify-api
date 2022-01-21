@@ -22,7 +22,7 @@ export const Sidebar = () => {
 
     return (
         <div className='hidden pb-24 relative md:shadow-lg md:shadow-slate-500/20 md:flex md:flex-col md:space-y-2 lg:space-y-3 xl:space-y-4 md:max-w-[18rem] lg:max-w-[20rem] h-screen bg-slate-100 font-semibold text-slate-600 overflow-y-scroll scrollbar-hide'>
-            <div className='px-2 pt-2 bg-slate-100 sticky top-0 flex flex-col space-y-2 lg:space-y-3 xl:space-y-4 text-slate-600'>
+            <div className='px-2 pt-2 lg:px-4 bg-slate-100 sticky top-0 flex flex-col space-y-2 lg:space-y-3 xl:space-y-4 text-slate-600'>
                 <div className='flex flex-col space-y-2 lg:space-y-3 xl:space-y-4 w-full font-semibold text-slate-600'>
                     <h1 className='text-2xl lg:text-3xl py-1 lg:py-2 font-black pl-1.5 bg-gradient-to-br from-emerald-500 to-indigo-500 bg-clip-text text-transparent'>Spotify</h1>
                     <div className='flex flex-col space-y-1 w-full'>
@@ -75,7 +75,7 @@ export const Sidebar = () => {
                 <hr className='border-slate-300' />
             </div>
 
-            <div className='flex flex-col space-y-1 w-full p-2 text-slate-600'>
+            <div className='flex flex-col space-y-1 w-full px-2 lg:px-4 text-slate-600'>
                 {playlists.map((playlist: any) => {
                     return (
                         <button

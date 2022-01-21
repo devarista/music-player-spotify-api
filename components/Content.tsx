@@ -11,14 +11,14 @@ import { HeartIcon } from '@heroicons/react/solid'
 type ColorsType = string[]
 
 const colors: ColorsType = [
-    'from-red-300 to-slate-50',
-    'from-emerald-300 to-slate-50',
-    'from-blue-300 to-slate-50',
-    'from-cyan-300 to-slate-50',
-    'from-teal-300 to-slate-50',
-    'from-indigo-300 to-slate-50',
-    'from-pink-300 to-slate-50',
-    'from-rose-300 to-slate-50',
+    'from-red-300 to-slate-100',
+    'from-emerald-300 to-slate-100',
+    'from-blue-300 to-slate-100',
+    'from-cyan-300 to-slate-100',
+    'from-teal-300 to-slate-100',
+    'from-indigo-300 to-slate-100',
+    'from-pink-300 to-slate-100',
+    'from-rose-300 to-slate-100',
 ]
 
 export const Content = () => {
@@ -54,10 +54,10 @@ export const Content = () => {
                         onClick={() => {
                             signOut()
                         }}
-                        className='flex space-x-2 items-center p-1 pr-3 bg-blue-200 shadow-lg shadow-blue-500/20 w-max rounded-full'
+                        className='flex space-x-2 items-center p-1 pr-3 bg-blue-100 shadow-lg shadow-blue-500/20 w-max rounded-full'
                     >
-                        <img src={session?.user.image} className='w-10 h-10 rounded-full' />
-                        <span>{session?.user.name}</span>
+                        <img src={session?.user.image} className='w-8 h-8 rounded-full' />
+                        <span className='font-medium'>{session?.user.name}</span>
                         <ChevronDownIcon className='w-5 h-5' />
                     </button>
                 </div>
